@@ -3017,37 +3017,40 @@ void reversiSpielFertig() {
   tft.fillScreen(bgColor);
   tft.setTextColor(textColor);
   tft.setTextSize(2);
-  tft.setCursor(40, 10);
+  tft.setCursor(40, 1);
   tft.print(F("Reversi"));
   tft.setTextSize(1);
-  tft.setCursor(26, 34);
+  tft.setCursor(26, 25);
   tft.print(F("Steine Spieler:  "));
   tft.println(steineSpieler1);
-  tft.setCursor(26, 44);
+  tft.setCursor(26, 35);
   tft.print(F("Steine Computer: "));
   tft.print(steineSpieler2);
   iconColor = ST77XX_WHITE;
   int scoreWinner = steineSpieler2;
   int scoreLooser = steineSpieler1;
   String name = "COMPUTER";
+  delay(5000);
 
   if (steineSpieler1 > steineSpieler2) {
     scoreWinner = steineSpieler1;
     scoreLooser = steineSpieler2;
     name = "";
   }
-  if (!hiScore("Reversi", scoreWinner, 0, name)) {   // Wenn keine Hiscore Eingabe, dann...
-    // Taste A zeichnen (Fertig)
-    displayButtonAndText(52, 109, "Fertig", 'A');
-    char key;
-    while (true) {
-      autoPowerOff();
-      key = scanKeypad();
-      if (key == 'A') {
-        return;
-      }
+  
+  hiScore("Reversi", scoreWinner, 0, name);
+  
+  // Taste A zeichnen (Fertig)
+  displayButtonAndText(52, 109, "Fertig", 'A');
+  char key;
+  while (true) {
+    autoPowerOff();
+    key = scanKeypad();
+    if (key == 'A') {
+      return;
     }
   }
+
 }
 
 bool kannSpielerZugMachen(byte spieler) {
@@ -3093,24 +3096,28 @@ void reversiLoop() {
         reversiSpielFertig();
         return;
       }
-      // Computer macht einen Zug
-      Zug besterZug = findeBestenZugReversi(4); // Such-Tiefe 3 für starke KI
 
-      if (besterZug.x != -1 && besterZug.y != -1) {
-        macheZugReversi(besterZug.x, besterZug.y, COMPUTER);
-
-        Serial.println(F("Spielfeld nach Computerzug:"));
-        printSpielfeld();
-
-        zeichneSpielfeld();
-        
-        if (istSpielfeldVoll()) {
-          reversiSpielFertig();
-          return;
+      // Abfrage, ob zug möglich ist
+      if (kannSpielerZugMachen(COMPUTER)) {
+        // Computer macht einen Zug
+        Zug besterZug = findeBestenZugReversi(4); // Such-Tiefe 3 für starke KI
+  
+        if (besterZug.x != -1 && besterZug.y != -1) {
+          macheZugReversi(besterZug.x, besterZug.y, COMPUTER);
+  
+          Serial.println(F("Spielfeld nach Computerzug:"));
+          printSpielfeld();
+  
+          zeichneSpielfeld();
+          
+          if (istSpielfeldVoll()) {
+            reversiSpielFertig();
+            return;
+          }
+        } else {
+          Serial.println(F("Kein gültiger Zug für Computer möglich"));
+          printSpielfeld();
         }
-      } else {
-        Serial.println(F("Kein gültiger Zug für Computer möglich"));
-        printSpielfeld();
       }
       spielerDran = !spielerDran;
     }
