@@ -41,3 +41,5 @@ Dies beschleunigt den Zugriff auf die ersten 4 mp3 Dateien.
 2 JST XH an Tastatur und Display anlöten.
 
 Bei den 4 und 8-poligen JST XH Kabeln beim Anlöten auf die Richtung achten!
+
+ESPboy_V1.2.ino mittels Arduino IDE auf den ESP8266 flashen.
