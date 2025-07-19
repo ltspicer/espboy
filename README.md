@@ -34,9 +34,9 @@ mp3 Dateien im Verzeichnis **content_for_sdcard** auf die SD Karte kopieren (Dat
 Der Rest kann dann gemeinsam darauf geschoben werden). 
 Dies beschleunigt den Zugriff auf die ersten 4 mp3 Dateien (wichtig für das Spiel Senso).
 
-1 Stück Dupond Draht am Akku+ beim Akkuhalter anlöten (wird am Pin **+ Batterie** angeschlossen).
+1 Stück Dupond Draht am Akku+ beim Akkuhalter anlöten (wird am PCB Pin **+ Batterie** angeschlossen).
 
-1 Stück JST XH 4p Kabelsatz am Akkuhalter anlöten.
+1 Stück JST XH 4p Kabelsatz am Akkuhalter anlöten (GND, 3V, 5V).
 
 2 Stück JST XH 8p Kabelsatz je an Tastatur und Display anlöten.
 
