@@ -43,3 +43,9 @@ Dies beschleunigt den Zugriff auf die ersten 4 mp3 Dateien.
 Bei den 4 und 8-poligen JST XH Kabeln beim Anlöten auf die Richtung achten!
 
 ESPboy_V1.2.ino mittels Arduino IDE auf den ESP8266 flashen.
+
+Stückliste ist in der Datei parts_list.txt zu finden.
+
+Im Verzeichnis "gehaeuse"sind die 2 stl Dateien für den 3D Druck.
+
+Im Verzeichnis "XGerber_v1.3" sind die Gerber Dateien um das PCB zu erstellen.
