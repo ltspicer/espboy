@@ -1,0 +1,24 @@
+1   nodeMCU ESP8266 ESP-12E CP2102 ( https://de.aliexpress.com/item/1005007175904162.html )
+2   PCF8574P DIP16 IC
+1   DF Player mini ( https://de.aliexpress.com/item/1005006027775709.html )
+1   Tastatur 4x4 Matrix ( https://de.aliexpress.com/item/4000873237364.html )
+1   TFT Display 1.8 Zoll 128x160 OLED ST7735 ( https://de.aliexpress.com/item/1005006691147140.html )
+1   Lautsprecher 8Ohm, 0.5W 23mm ( https://de.aliexpress.com/item/1005006344913948.html )
+1   Ein/Aus Schalter 2 Pin ( https://de.aliexpress.com/item/1005006332969902.html )
+1   1x18650 Halterung mit Lade und 3.3V & 5V Ausgang ( https://de.aliexpress.com/item/1005001829484812.html )
+1   18650 Li-Ion Akku
+2   2 Pol JST XH 2.54 Stecker/Buchse Set 20cm ( https://de.aliexpress.com/item/1005007460897865.html )
+2   8 Pol JST XH 2.54 Stecker/Buchse Set 20cm ( https://de.aliexpress.com/item/1005007460897865.html )
+1   4 Pol JST XH 2.54 Stecker/Buchse Set 20cm ( https://de.aliexpress.com/item/1005007460897865.html )
+8   Senkkopf Blechschraube 2.6x6mm ( https://de.aliexpress.com/item/1005008358227112.html )
+2   IC Sockel DIP16
+2   Pinheader 40p weiblich 1-reihig zuschneidbar ( https://de.aliexpress.com/item/1005007235591794.html )
+1   Pinheader mänlich 1-reihig zuschneidbar (für einzelne Pins und Jumper)
+1   BC337-40 Transistor
+2   Elko 100µF 16V (darf abweichen)
+4   10k Widerstand
+1   2k2 Widerstand
+1   4k7 Widerstand
+1   3k3 Widerstand
+1   Dupond Draht 20cm einseitig weiblich (für + Pol Akkuabgriff auf ADC0)
+2   2p Jumper ( https://de.aliexpress.com/item/32892743148.html )
