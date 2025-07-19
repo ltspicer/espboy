@@ -55,3 +55,7 @@ Im Verzeichnis **gehaeuse** sind die 2 stl Dateien für den 3D Druck.
 Im Verzeichnis **XGerber_v1.4** sind die Gerber Dateien um das PCB zu erstellen.
 
 Die Datei **gameboy_esp8266.T3001** kann mit **Target3001!** geöffnet werden.
+
+Jumper K4 kann normalerweise auf 2-3 gesetzt werden.
+
+Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
