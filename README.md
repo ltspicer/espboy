@@ -8,15 +8,6 @@ Die Materialkosten belaufen sich auf unter 20 €
 ------------------------
 ------------------------
 
-## Changelog
-
-### V1.2 (2025-07-19)
-
-- Initial release
-
-------------------------
-------------------------
-
 Enthaltene Spiele (V1.2):
 
 - Reversi
@@ -59,3 +50,13 @@ Die Datei **gameboy_esp8266.T3001** kann mit **Target3001!** geöffnet werden.
 Jumper K4 kann normalerweise auf 2-3 gesetzt werden.
 
 Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
+
+------------------------
+------------------------
+
+## Changelog
+
+### V1.2 (2025-07-19)
+
+- Initial release
+
