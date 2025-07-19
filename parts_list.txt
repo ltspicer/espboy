@@ -22,3 +22,4 @@
 1   3k3 Widerstand
 1   Dupond Draht 20cm einseitig weiblich (für + Pol Akkuabgriff auf ADC0)
 2   2p Jumper ( https://de.aliexpress.com/item/32892743148.html )
+1   microSD Karte (es reichen bereits 128MB !)
