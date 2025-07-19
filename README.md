@@ -53,3 +53,5 @@ Stückliste ist in der Datei **parts_list.txt** zu finden.
 Im Verzeichnis **gehaeuse** sind die 2 stl Dateien für den 3D Druck.
 
 Im Verzeichnis **XGerber_v1.4** sind die Gerber Dateien um das PCB zu erstellen.
+
+Die Datei **gameboy_esp8266.T3001** kann mit **Target3001!** geöffnet werden.
