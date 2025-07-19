@@ -10,7 +10,7 @@
 2   2 Pol JST XH 2.54 Stecker/Buchse Set 20cm ( https://de.aliexpress.com/item/1005007460897865.html )
 2   8 Pol JST XH 2.54 Stecker/Buchse Set 20cm ( https://de.aliexpress.com/item/1005007460897865.html )
 1   4 Pol JST XH 2.54 Stecker/Buchse Set 20cm ( https://de.aliexpress.com/item/1005007460897865.html )
-8   Senkkopf Blechschraube 2.6x6mm ( https://de.aliexpress.com/item/1005008358227112.html )
+10  Senkkopf Blechschraube 2.6x6mm ( https://de.aliexpress.com/item/1005008358227112.html )
 2   IC Sockel DIP16
 2   Pinheader 40p weiblich 1-reihig zuschneidbar ( https://de.aliexpress.com/item/1005007235591794.html )
 1   Pinheader mänlich 1-reihig zuschneidbar (für einzelne Pins und Jumper)
