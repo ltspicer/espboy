@@ -1,9 +1,9 @@
 # espboy
 DIY Gameboy with ESP8266
 
-Dieses kleine Amateurprojekt soll zeigen, was mit einem kostengünstigen ESP8266 (ESP-12e) möglich ist.
+Dieses kleine Amateurprojekt soll zeigen, was mit einem kostengünstigen ESP8266 (ESP-12E) möglich ist.
 
-Materialkosten belaufen sich auf unter 20 €
+Die Materialkosten belaufen sich auf unter 20 €
 
 ------------------------
 ------------------------
@@ -17,7 +17,7 @@ Materialkosten belaufen sich auf unter 20 €
 ------------------------
 ------------------------
 
-Enthaltene Spiele:
+Enthaltene Spiele (V1.2):
 
 - Reversi
 - 4 gewinnt
