@@ -50,4 +50,4 @@ Stückliste ist in der Datei **parts_list.txt** zu finden.
 
 Im Verzeichnis **gehaeuse** sind die 2 stl Dateien für den 3D Druck.
 
-Im Verzeichnis **XGerber_v1.3** sind die Gerber Dateien um das PCB zu erstellen.
+Im Verzeichnis **XGerber_v1.4** sind die Gerber Dateien um das PCB zu erstellen.
