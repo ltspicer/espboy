@@ -28,7 +28,7 @@ Enthaltene Spiele (V1.2):
 ------------------------
 ------------------------
 
-Micro SD Karte mit **FAT32** formattieren.
+Micro SD Karte mit **FAT32** formatieren.
 
 mp3 Dateien im Verzeichnis **content_for_sdcard** in den Root (ohne Verzeichnis) der SD Karte kopieren (Dateien 0001 bis 0004 **einzeln** kopieren. 
 Der Rest kann dann gemeinsam darauf geschoben werden). 
