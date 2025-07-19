@@ -40,6 +40,8 @@ Dies beschleunigt den Zugriff auf die ersten 4 mp3 Dateien (wichtig für das Spi
 
 2 Stück JST XH 8p Kabelsatz je an Tastatur und Display anlöten.
 
+2 Stück JST XH 2p Kabelsatz je an Schalter und Lautsprecher anlöten.
+
 Bei den 4 und 8-poligen JST XH Kabelsätzen beim Anlöten auf die Richtung achten (Pin 1 auf der richtigen Seite)!
 
 Für ESP8266 und DF_Player_mini einen Pinheader weiblich 1-reihig verwenden (quasi als Sockel).
