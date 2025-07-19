@@ -5,8 +5,8 @@ Dieses kleine Amateurprojekt zeigt, was alles mit einem kostengünstigen ESP8266
 
 Materialkosten belaufen sich unter 20 €
 
-
-## Weitere Angaben folgen später!
+------------------------
+------------------------
 
 ## Changelog
 
