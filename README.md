@@ -30,7 +30,7 @@ Enthaltene Spiele:
 
 Micro SD Karte mit **FAT32** formattieren.
 
-mp3 Dateien im Verzeichnis **content_for_sdcard** auf die SD Karte kopieren (Dateien 0001 bis 0004 **einzeln** kopieren. 
+mp3 Dateien im Verzeichnis **content_for_sdcard** in den Root (ohne Verzeichnis) der SD Karte kopieren (Dateien 0001 bis 0004 **einzeln** kopieren. 
 Der Rest kann dann gemeinsam darauf geschoben werden). 
 Dies beschleunigt den Zugriff auf die ersten 4 mp3 Dateien (wichtig für das Spiel Senso).
 
