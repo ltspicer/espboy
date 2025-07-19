@@ -13,7 +13,7 @@
 10  Senkkopf Blechschraube 2.6x6mm ( https://de.aliexpress.com/item/1005008358227112.html )
 2   IC Sockel DIP16
 2   Pinheader 40p weiblich 1-reihig zuschneidbar ( https://de.aliexpress.com/item/1005007235591794.html )
-1   Pinheader mänlich 1-reihig zuschneidbar (für einzelne Pins und Jumper)
+1   Pinheader mänlich 1-reihig zuschneidbar (für einzelne Testpins und Jumper-Basis)
 1   BC337-40 Transistor
 2   Elko 100µF 16V (darf abweichen)
 4   10k Widerstand
