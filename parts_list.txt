@@ -5,7 +5,7 @@
 1   TFT Display 1.8 Zoll 128x160 OLED ST7735 ( https://de.aliexpress.com/item/1005006691147140.html )
 1   Lautsprecher 8Ohm, 0.5W 23mm ( https://de.aliexpress.com/item/1005006344913948.html )
 1   Ein/Aus Schalter 2 Pin ( https://de.aliexpress.com/item/1005006332969902.html )
-1   1x18650 Halterung mit Lade und 3.3V & 5V Ausgang ( https://de.aliexpress.com/item/1005001829484812.html )
+1   1x18650 Halterung mit Ladebuchse (mini USB) und 3.3V & 5V Ausgang ( https://de.aliexpress.com/item/1005001829484812.html )
 1   18650 Li-Ion Akku
 2   2 Pol JST XH 2.54 Stecker/Buchse Set 20cm ( https://de.aliexpress.com/item/1005007460897865.html )
 2   8 Pol JST XH 2.54 Stecker/Buchse Set 20cm ( https://de.aliexpress.com/item/1005007460897865.html )
