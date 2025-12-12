@@ -19,6 +19,30 @@ Enthaltene Spiele (V1.2):
 ------------------------
 ------------------------
 
+Flashen:
+
+Variante 1:
+
+Mittels Arduino IDE die ino Datei hochladen.
+
+Variante 2:
+
+Mittels esptool.exe (Windows) oder esptool (Linux) die bin Datei hochladen.
+
+Beispiel für Windows:
+
+esptool.exe -vv -cd nodemcu -cb 115200 -bz 4M -cp COM7 -ca 0x00000 -cf ESPboy_V1.3.bin
+
+Beispiel für Linux:
+
+sudo ./esptool -vv -cd nodemcu -cb 115200 -bz 4M -cp /dev/ttyUSB0 -ca 0x00000 -cf ESPboy_V1.3.bin
+
+
+**Port ( /dev/ttyUSB0 bzw COM7 ) und bin ( ESPboy_V1.3.bin ) ggf. anpassen.**
+
+------------------------
+------------------------
+
 Micro SD Karte mit **FAT32** formatieren.
 
 mp3 Dateien im Verzeichnis **content_for_sdcard** in den Root (ohne Verzeichnis) der SD Karte kopieren (Dateien 0001 bis 0004 **einzeln** kopieren. 
@@ -56,7 +80,15 @@ Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
 
 ## Changelog
 
-### V1.2 (2025-07-19)
+### V1.3 (2025-12-12)
+- Improved button operation
+- Minesweeper runs more smoothly
 
-- Initial release
+### V1.2 (2025-07-19)
+- Reversi
+- 4 gewinnt
+- Mini Mastermind
+- Minesweeper
+- Senso
+- Update info
 
