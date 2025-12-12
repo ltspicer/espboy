@@ -8,7 +8,7 @@ Die Materialkosten belaufen sich auf unter 20 €
 ------------------------
 ------------------------
 
-Enthaltene Spiele (V1.2):
+Enthaltene Spiele:
 
 - Reversi
 - 4 gewinnt
