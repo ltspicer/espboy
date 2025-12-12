@@ -21,24 +21,24 @@ Die Materialkosten belaufen sich auf unter 20 €
 
 ### Flashen:
 
-Variante 1:
+**Variante 1:**
 
 Mittels Arduino IDE die ino Datei hochladen.
 
-Variante 2:
+**Variante 2:**
 
-Mittels esptool.exe (Windows) oder esptool (Linux) die bin Datei hochladen.
+Mittels **esptool.exe (Windows)** oder **esptool (Linux)** die bin Datei hochladen.
 
 Beispiel für Windows:
 
-esptool.exe -vv -cd nodemcu -cb 115200 -bz 4M -cp COM7 -ca 0x00000 -cf ESPboy_V1.3.bin
+**esptool.exe -vv -cd nodemcu -cb 115200 -bz 4M -cp COM7 -ca 0x00000 -cf ESPboy_V1.3.bin**
 
 Beispiel für Linux:
 
-sudo ./esptool -vv -cd nodemcu -cb 115200 -bz 4M -cp /dev/ttyUSB0 -ca 0x00000 -cf ESPboy_V1.3.bin
+**sudo ./esptool -vv -cd nodemcu -cb 115200 -bz 4M -cp /dev/ttyUSB0 -ca 0x00000 -cf ESPboy_V1.3.bin**
 
 
-**Port ( /dev/ttyUSB0 bzw COM7 ) und bin ( ESPboy_V1.3.bin ) ggf. anpassen.**
+**Port** ( /dev/ttyUSB0 bzw COM7 ) und **bin** ( ESPboy_V1.3.bin ) ggf. **anpassen**.
 
 ------------------------
 ------------------------
