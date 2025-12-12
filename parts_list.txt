@@ -16,6 +16,7 @@
 1   Pinheader mänlich 1-reihig zuschneidbar (für einzelne Testpins und Jumper-Basis)
 1   BC337-40 (ohne Transistor können Pins C - E überbrückt werden. Dann aber keine Auto-Power-Off Funktion)
 2   Elko 100µF 16V (darf abweichen)
+1   Elko 1µF 16V (darf abweichen)
 4   10k Widerstand
 1   2k2 Widerstand
 1   4k7 Widerstand
@@ -24,4 +25,4 @@
 2   2p Jumper ( https://de.aliexpress.com/item/32892743148.html )
 1   microSD Karte (es reichen bereits 128MB !)
 1   Diode 1N4007 oder ähnlich (lediglich Freilaufdiode)
-1   SIP-1A03 Reed-Relais 3V
+1   SIP-1A03 Reed-Relais 3V (für Auto-Power-Off Funktion)
