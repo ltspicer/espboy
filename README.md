@@ -5,6 +5,10 @@ Dieses kleine Amateurprojekt soll zeigen, was mit einem kostengünstigen ESP8266
 
 Die Materialkosten belaufen sich auf unter 20 €
 
+![ESPboy PCB Layout](gameboy_esp8266_PCB.PNG){ width="100%" }
+
+![ESPboy Schaltplan](gameboy_esp8266_SCH.PNG){ width="100%" }
+
 ------------------------
 ------------------------
 
