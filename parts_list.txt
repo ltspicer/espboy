@@ -23,6 +23,6 @@
 1   3k3 Widerstand
 1   Dupond Draht 20cm einseitig weiblich (für + Pol Akkuabgriff zu ESP-ADC0)
 2   2p Jumper ( https://de.aliexpress.com/item/32892743148.html )
-1   microSD Karte (es reichen bereits 128MB !)
+1   microSD Karte (mindestens 32MB)
 1   Diode 1N4007 oder ähnlich (lediglich Freilaufdiode)
 1   SIP-1A03 Reed-Relais 3V (für Auto-Power-Off Funktion)
