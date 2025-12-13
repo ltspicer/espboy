@@ -42,7 +42,7 @@ Beispiel für Linux:
 **sudo ./esptool -vv -cd nodemcu -cb 115200 -bz 4M -cp /dev/ttyUSB0 -ca 0x00000 -cf ESPboy_V1.4.bin**
 
 
-**Port** ( /dev/ttyUSB0 bzw COM7 ) und **bin** ( ESPboy_V1.3.bin ) ggf. **anpassen**.
+**Port** ( /dev/ttyUSB0 bzw COM7 ) und **bin** ( ESPboy_V1.4.bin ) ggf. **anpassen**.
 
 ------------------------
 ------------------------
