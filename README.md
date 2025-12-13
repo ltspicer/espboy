@@ -65,7 +65,7 @@ Bei den 4 und 8-poligen JST XH Kabelsätzen beim Anlöten auf die Richtung achte
 
 Für ESP8266 und DF_Player_mini einen Pinheader weiblich 1-reihig verwenden (quasi als Sockel).
 
-**ESPboy_V1.2.ino** mittels Arduino IDE auf den ESP8266 flashen.
+**ESPboy_V1.4.ino** mittels Arduino IDE auf den ESP8266 flashen.
 
 Stückliste ist in der Datei **parts_list.txt** zu finden.
 
