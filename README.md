@@ -31,11 +31,11 @@ Mittels **esptool.exe (Windows)** oder **esptool (Linux)** die bin Datei hochlad
 
 Beispiel für Windows:
 
-**esptool.exe -vv -cd nodemcu -cb 115200 -bz 4M -cp COM7 -ca 0x00000 -cf ESPboy_V1.3.bin**
+**esptool.exe -vv -cd nodemcu -cb 115200 -bz 4M -cp COM7 -ca 0x00000 -cf ESPboy_V1.4.bin**
 
 Beispiel für Linux:
 
-**sudo ./esptool -vv -cd nodemcu -cb 115200 -bz 4M -cp /dev/ttyUSB0 -ca 0x00000 -cf ESPboy_V1.3.bin**
+**sudo ./esptool -vv -cd nodemcu -cb 115200 -bz 4M -cp /dev/ttyUSB0 -ca 0x00000 -cf ESPboy_V1.4.bin**
 
 
 **Port** ( /dev/ttyUSB0 bzw COM7 ) und **bin** ( ESPboy_V1.3.bin ) ggf. **anpassen**.
