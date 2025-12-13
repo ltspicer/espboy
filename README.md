@@ -85,7 +85,7 @@ Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
 ## Changelog
 
 ### V1.4 (2025-12-13)
-- Online update added
+- Over-the-Air (OTA) Update added
 
 ### V1.3 (2025-12-12)
 - Improved button operation
