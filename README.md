@@ -5,10 +5,6 @@ Dieses kleine Amateurprojekt soll zeigen, was mit einem kostengünstigen ESP8266
 
 Die Materialkosten belaufen sich auf unter 20 €
 
-![ESPboy PCB Layout](gameboy_esp8266_PCB.PDF)
-
-![ESPboy Schaltplan](gameboy_esp8266_SCH.PDF)
-
 ------------------------
 ------------------------
 
@@ -83,6 +79,9 @@ Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
 ------------------------
 
 ## Changelog
+
+### V1.4 (2025-12-13)
+- Online update added
 
 ### V1.3 (2025-12-12)
 - Improved button operation
