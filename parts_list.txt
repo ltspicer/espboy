@@ -14,7 +14,8 @@
 2   IC Sockel DIP16
 2   Pinheader 40p weiblich 1-reihig zuschneidbar ( https://de.aliexpress.com/item/1005007235591794.html )
 1   Pinheader mänlich 1-reihig zuschneidbar (für einzelne Testpins und Jumper-Basis)
-1   BC337-40 (ohne Transistor können Pins C - E überbrückt werden. Dann aber keine Auto-Power-Off Funktion)
+1   BC337-40 (für Auto-Power-Off Funktion)
+1   SIP-1A03 Reed-Relais 3V (für Auto-Power-Off Funktion)
 2   Elko 100µF 16V (darf abweichen)
 1   Elko 1µF 16V (darf abweichen)
 4   10k Widerstand
@@ -25,4 +26,4 @@
 2   2p Jumper ( https://de.aliexpress.com/item/32892743148.html )
 1   microSD Karte (mindestens 32MB)
 1   Diode 1N4007 oder ähnlich (lediglich Freilaufdiode)
-1   SIP-1A03 Reed-Relais 3V (für Auto-Power-Off Funktion)
+
