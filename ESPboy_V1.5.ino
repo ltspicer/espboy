@@ -783,8 +783,7 @@ void settingsMenu() {
   while (true) {
     autoPowerOff();
     char pressedKey = scanKeypad();  // Tastaturabfrage
-    if (pressedKey == 'A') pressedKey = '8';
-    if (pressedKey >= '1' && pressedKey <= '8') {
+    if (pressedKey >= '1' && pressedKey <= '5') {
       lastActivity = millis();
       auswahl = pressedKey - '0'; // Zeichen in Zahl umwandeln
       switch (auswahl) {
@@ -824,10 +823,10 @@ void settingsMenu() {
             }
             displaySettingsMenu();
             break;
-        case 8:
-            Serial.println(F("Abbruch gewählt"));
-            return;
       }
+    } else if (pressedKey == 'A') {
+      Serial.println(F("Abbruch gewählt"));
+      return;
     }
   }
 }
@@ -3658,7 +3657,7 @@ bool checkWin() {
 ////////////////////////////////////////
 
 // Funktionsprototypen (Deklaration)
-void zeichneFeldInaktiv(byte value);
+void zeichneFeld(byte value, bool activ);
 void sensoInitGame();
 void checkButtonPressed();
 void isPlayerAction();
@@ -3673,7 +3672,7 @@ void senso() {
   bgColor = ST77XX_BLACK;
   tft.fillScreen(bgColor);
   for (int i = 0; i < 4; i++) {
-    zeichneFeldInaktiv(i);
+    zeichneFeld(i, false);
   }
   sensoInitGame();
   sensoLoop();
@@ -3688,7 +3687,7 @@ void sensoLoop() {
     checkButtonPressed();
     switch(sensoGameStatus) {
       case GAME_STATUS_RUNNING:
-        if (isWaitingForPlayer == true) {
+        if (isWaitingForPlayer) {
           isPlayerAction();
         } else {
           playSequence();
@@ -3711,12 +3710,30 @@ void sensoLoop() {
   Serial.println(F("sensoLoop beendet"));
 }
 
-// Funktion, Feld aktiv zu zeichnen
-void zeichneFeldAktiv(byte feld) {
+// Senso Feld zeichnen
+void zeichneFeld(byte feld, bool activ) {
+
+  uint16_t colorRed;
+  uint16_t colorYellow;
+  uint16_t colorGreen;
+  uint16_t colorBlue;
+
+  if (activ) {
+    colorRed = ST77XX_RED;
+    colorYellow = ST77XX_YELLOW;
+    colorGreen = ST77XX_GREEN;
+    colorBlue = ST77XX_BLUE;
+  } else {
+    colorRed = ST77XX_DARKRED;
+    colorYellow = ST77XX_DARKYELLOW;
+    colorGreen = ST77XX_DARKGREEN;
+    colorBlue = ST77XX_DARKBLUE;
+  }
+
   switch(feld) {
     case SENSO_FELD_ROT:
-      //tft.fillCircle(112, 30, 24, ST77XX_RED);
-      tft.fillRect(112 - 24, 30 - 24, 48, 48, ST77XX_RED);
+      //tft.fillCircle(112, 30, 24, colorRed);
+      tft.fillRect(112 - 24, 30 - 24, 48, 48, colorRed);
       tft.setCursor(108, 23);
       tft.setTextSize(2);
       tft.setTextColor(ST77XX_WHITE);
@@ -3724,8 +3741,8 @@ void zeichneFeldAktiv(byte feld) {
       Serial.println(F("ROT"));
       break;
     case SENSO_FELD_GELB:
-      //tft.fillCircle(51, 92, 24, ST77XX_YELLOW);
-      tft.fillRect(51 - 24, 92 - 24, 48, 48, ST77XX_YELLOW);
+      //tft.fillCircle(51, 92, 24, colorYellow);
+      tft.fillRect(51 - 24, 92 - 24, 48, 48, colorYellow);
       tft.setCursor(46, 87);
       tft.setTextSize(2);
       tft.setTextColor(ST77XX_WHITE);
@@ -3733,8 +3750,8 @@ void zeichneFeldAktiv(byte feld) {
       Serial.println(F("GELB"));
       break;
     case SENSO_FELD_GRUEN:
-      //tft.fillCircle(51, 30, 24, ST77XX_GREEN);
-      tft.fillRect(51 - 24, 30 - 24, 48, 48, ST77XX_GREEN);
+      //tft.fillCircle(51, 30, 24, colorGreen);
+      tft.fillRect(51 - 24, 30 - 24, 48, 48, colorGreen);
       tft.setCursor(46, 23);
       tft.setTextSize(2);
       tft.setTextColor(ST77XX_WHITE);
@@ -3742,51 +3759,13 @@ void zeichneFeldAktiv(byte feld) {
       Serial.println(F("GRÜN"));
       break;
     case SENSO_FELD_BLAU:
-      //tft.fillCircle(112, 92, 24, ST77XX_BLUE);
-      tft.fillRect(112 - 24, 92 - 24, 48, 48, ST77XX_BLUE);
+      //tft.fillCircle(112, 92, 24, colorBlue);
+      tft.fillRect(112 - 24, 92 - 24, 48, 48, colorBlue);
       tft.setCursor(108, 87);
       tft.setTextSize(2);
       tft.setTextColor(ST77XX_WHITE);
       tft.print(9);
       Serial.println(F("BLAU"));
-      break;
-  }
-}
-
-// Funktion, Feld inaktiv zu zeichnen
-void zeichneFeldInaktiv(byte feld) {
-  switch(feld) {
-    case SENSO_FELD_ROT:
-      //tft.fillCircle(112, 30, 24, ST77XX_DARKRED);
-      tft.fillRect(112 - 24, 30 - 24, 48, 48, ST77XX_DARKRED);
-      tft.setCursor(108, 23);
-      tft.setTextSize(2);
-      tft.setTextColor(ST77XX_WHITE);
-      tft.print(3);
-      break;
-    case SENSO_FELD_GELB:
-      //tft.fillCircle(51, 92, 24, ST77XX_DARKYELLOW);
-      tft.fillRect(51 - 24, 92 - 24, 48, 48, ST77XX_DARKYELLOW);
-      tft.setCursor(46, 87);
-      tft.setTextSize(2);
-      tft.setTextColor(ST77XX_WHITE);
-      tft.print(7);
-      break;
-    case SENSO_FELD_GRUEN:
-      //tft.fillCircle(51, 30, 24, ST77XX_DARKGREEN);
-      tft.fillRect(51 - 24, 30 - 24, 48, 48, ST77XX_DARKGREEN);
-      tft.setCursor(46, 23);
-      tft.setTextSize(2);
-      tft.setTextColor(ST77XX_WHITE);
-      tft.print(1);
-      break;
-    case SENSO_FELD_BLAU:
-      //tft.fillCircle(112, 92, 24, ST77XX_DARKBLUE);
-      tft.fillRect(112 - 24, 92 - 24, 48, 48, ST77XX_DARKBLUE);
-      tft.setCursor(108, 87);
-      tft.setTextSize(2);
-      tft.setTextColor(ST77XX_WHITE);
-      tft.print(9);
       break;
   }
 }
@@ -3818,10 +3797,10 @@ void sensoInitGame() {
 void playColor(byte feld, int delayTime) {
   myDFPlayer.play(sensoTon[feld]);
   delay(400);         //delay(490);
-  zeichneFeldAktiv(feld);
+  zeichneFeld(feld, true);
   delay(delayTime);   //delay(480);
   myDFPlayer.stop();
-  zeichneFeldInaktiv(feld);
+  zeichneFeld(feld, false);
   //myDFPlayer.stop();
   delay(70);
 }
