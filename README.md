@@ -85,7 +85,7 @@ Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
 ## Changelog
 
 ### V1.6 (2025-12-21)
-- Jumper for display selection added on PCB (future version)
+- Jumper for 2.8" display selection added on PCB (future version)
 
 ### V1.5 (2025-12-13)
 - View changelog added
