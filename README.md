@@ -35,14 +35,14 @@ Mittels **esptool.exe (Windows)** oder **esptool (Linux)** die bin Datei hochlad
 
 Beispiel für Windows:
 
-**esptool.exe -vv -cd nodemcu -cb 115200 -bz 4M -cp COM7 -ca 0x00000 -cf ESPboy_V1.5.bin**
+**esptool.exe -vv -cd nodemcu -cb 115200 -bz 4M -cp COM7 -ca 0x00000 -cf ESPboy_V1.4.bin**
 
 Beispiel für Linux:
 
-**sudo ./esptool -vv -cd nodemcu -cb 115200 -bz 4M -cp /dev/ttyUSB0 -ca 0x00000 -cf ESPboy_V1.5.bin**
+**sudo ./esptool -vv -cd nodemcu -cb 115200 -bz 4M -cp /dev/ttyUSB0 -ca 0x00000 -cf ESPboy_V1.4.bin**
 
 
-**Port** ( /dev/ttyUSB0 bzw COM7 ) und **bin** ( ESPboy_V1.5.bin ) ggf. **anpassen**.
+**Port** ( /dev/ttyUSB0 bzw COM7 ) und **bin** ( ESPboy_V1.4.bin ) ggf. **anpassen**.
 
 ------------------------
 ------------------------
@@ -65,7 +65,7 @@ Bei den 4 und 8-poligen JST XH Kabelsätzen beim Anlöten auf die Richtung achte
 
 Für ESP8266 und DF_Player_mini einen Pinheader weiblich 1-reihig verwenden (quasi als Sockel).
 
-**ESPboy_V1.5.ino** mittels Arduino IDE (oder **bin** mit **esptool**) auf den ESP8266 flashen.
+**ESPboy_V1.4.ino** mittels Arduino IDE auf den ESP8266 flashen.
 
 Stückliste ist in der Datei **parts_list.txt** zu finden.
 
@@ -84,12 +84,17 @@ Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
 
 ## Changelog
 
-### V1.6 (2025-12-21)
-- Jumper for 2.8" display selection added on PCB for future software versions ( > V1.5 )
+### V1.8 (2025-12-29)
+- Game info display standardized
+
+### V1.7 (2025-12-28)
+- Snake game added
+
+### V1.6 (2025-12-23)
+- 1.8 or 2.8 inch display support
 
 ### V1.5 (2025-12-13)
 - View changelog added
-- Auto-power-off over reed-relay for more brightness on active display
 
 ### V1.4 (2025-12-13)
 - Over-the-Air (OTA) Update added
