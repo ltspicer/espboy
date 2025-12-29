@@ -19,6 +19,7 @@ Die Materialkosten belaufen sich auf unter 20 €
 - Mini Mastermind
 - Minesweeper
 - Senso
+- Snake
 
 ------------------------
 ------------------------
