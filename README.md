@@ -85,6 +85,9 @@ Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
 
 ## Changelog
 
+### V1.9 (2026-01-08)
+- Pin7 for jumper added. Now is pin1 or pin7 supported
+
 ### V1.8 (2025-12-29)
 - Game info display standardized
 
