@@ -86,6 +86,9 @@ Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
 
 ## Changelog
 
+### V2.1 (2026-01-10)
+- Dummy version. Because bug in versions < 2.0 can't handle V2.0
+
 ### V2.0 (2026-01-10)
 - Tic Tac Toe added
 
