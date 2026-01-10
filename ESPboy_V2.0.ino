@@ -2513,15 +2513,7 @@ bool performFTPUpdate(String remoteFile) {
 }
 
 String formatVersion(float ver) {
-  String s = String(ver);
-  while (s.endsWith("0") && s.indexOf(".") != -1) {
-    s = s.substring(0, s.length() - 1);
-  }
-
-  if (s.endsWith(".")) {
-    s = s.substring(0, s.length() - 1);
-  }
-  return s;
+  return String(ver, 1);
 }
 
 void displayInfoFile(String content, int numLines) {
