@@ -86,6 +86,10 @@ Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
 
 ## Changelog
 
+### V2.2 (2026-01-11)
+- AI for Reversi and 4gewinnt much better
+- Level setting over GUI for Reversi and 4gewinnt
+
 ### V2.1 (2026-01-10)
 - Dummy version. Because bug in versions < 2.0 can't handle V2.0
 
