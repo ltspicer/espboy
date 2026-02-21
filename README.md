@@ -7,7 +7,7 @@ Die Materialkosten belaufen sich auf unter 20 €
 
 ![ESPboy PCB Layout](gameboy_esp8266_PCB.PDF)
 
-![ESPboy Schaltplan](gameboy_esp8266_SCH.PDF)
+![ESPboy Schaltplan](gameboy_esp8266_SCH.png)
 
 ------------------------
 ------------------------
