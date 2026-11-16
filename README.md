@@ -86,6 +86,9 @@ Jumper K5 kann normalerweise auf 1-2 gesetzt werden.
 
 ## Changelog
 
+### V2.5 (2026-11-16)
+- Nine Men’s Morris game added
+
 ### V2.3 (2026-01-11)
 - Draw query inserted in 4 gewinnt
 
